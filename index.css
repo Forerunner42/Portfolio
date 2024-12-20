@@ -1,0 +1,232 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size:16px;
+}
+
+body{
+    background-color:rgb(88, 129, 87);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, a{ /* Font Families */
+    font-family: "Merriweather", serif;
+    font-weight:300;
+    font-style: normal;
+}
+
+nav{ /* Nav Section */
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgb(52, 78, 65);
+    color:rgb(174 159 128);
+    padding:20px;
+}
+
+nav > ul{
+    display:flex;
+    list-style-type: none;
+}
+
+nav > ul > li{
+    margin:0 20px 0 20px;
+    font-size:20px;
+}
+
+nav > ul a{
+    text-decoration:none;
+    color:rgb(174 159 128);
+}
+
+nav > ul > li > a:hover{
+    color:orange;
+}
+
+
+
+header > h1{ /* Header Section */
+    text-align:center;
+    margin-bottom:0;
+    letter-spacing:5px;
+    font-size:50px;
+    color:rgb(174 159 128);
+}
+
+header > p{
+    text-align:center;
+    margin:0;
+    letter-spacing:2px;
+    font-size:20px;
+    color:rgb(174 159 128);
+}
+
+header > #profile-img{
+    width:250px;
+    height:250px;
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    border-radius:50%;
+    display:block;
+    background-image: url("Projects Picture Folder/blank-profile-picture.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+header > #profile-img:hover{ /* Image Hover Effect */
+    background-image: url("Projects Picture Folder/hazelnut-placeholder.jpg");
+    
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate{
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.Main > article > h2, .Main > article > h4, .Main , article > p{ /* Main Description */
+    text-align:center;
+}
+
+.Main > article > h2{
+    margin-bottom:0;
+}
+
+.Main , article > p{
+    margin-top:0;
+}
+
+.Main > article{
+    background-color:rgb(218, 215, 205);
+    padding:10px;
+    border:3px solid black;
+    border-radius: 20px;
+    margin:0 auto;
+    width:50%;
+}
+
+
+
+.Main2 > .ProjectRow{ /* Row Groups */
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.Main2 > .ProjectRow > figure{
+    margin:0;
+}
+
+.Main2 > .ProjectRow > figure > img{
+    width:395px;
+    height:300px;
+    border-radius:17px;
+    margin-bottom:10px;
+}
+
+summary{
+    font-size:20px;
+    text-align:center;
+    margin:5px 0 5px 0;
+}
+
+
+
+.Main2{
+    display:flex;
+    flex-direction:row;
+    margin:0 auto;
+    gap:6rem;
+}
+
+
+
+.ProjectRow{
+    width:25rem;
+}
+
+.ProjectRow > figure{ /* Individual Project Display Flexbox */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(218, 215, 205);
+    border:3px solid black;
+    border-radius:20px;
+}
+
+figure > img{
+    border-radius:17px;
+    margin-bottom:10px;
+    width:395px;
+}
+
+figcaption > h3 > a{
+    color:black;
+    text-decoration: none;
+}
+
+figcaption > h3{
+    margin:0;
+}
+
+.ProjectRow > figure > details > p{
+    margin-right:5px;
+    margin-left:5px;
+}
+
+.ProjectRow > figure > details > a{
+    text-decoration:none;
+    text-align:center;
+    padding:5px;
+    display:block;
+}
+
+details > a{
+    color:black;
+}
+
+details > a:hover{
+    color:orange;
+}
+
+
+
+footer{ /* Footer Section */
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    background-color:rgb(52, 78, 65);
+    color:rgb(174 159 128);
+    padding:20px;
+}
+
+footer > ul{
+    display:flex;
+    list-style-type: none;
+}
+
+footer > ul > li > a{
+    margin-left:10px;
+    margin-right:10px;
+    text-decoration:none;
+    color:rgb(174 159 128);
+}
+
+footer > ul > li > a:hover{
+    color:orange;
+}
+
+footer > p, footer > ul{
+    margin:0;
+    padding:0;
+    justify-self:center;
+}

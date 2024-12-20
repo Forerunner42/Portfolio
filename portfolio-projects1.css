@@ -1,0 +1,139 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size:16px;
+}
+
+body{
+    background-color:rgb(88, 129, 87);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, a{ /* Font Families */
+    font-family: "Merriweather", serif;
+    font-weight:300;
+    font-style: normal;
+}
+
+nav{ /* Nav Section */
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgb(52, 78, 65);
+    color:rgb(174 159 128);
+    padding:20px;
+}
+
+nav > ul{
+    display:flex;
+    list-style-type: none;
+}
+
+nav > ul > li{
+    margin:0 20px 0 20px;
+    font-size:20px;
+}
+
+nav > ul a{
+    text-decoration:none;
+    color:rgb(174 159 128);
+}
+
+
+
+header > h1{ /* Header Section */
+    text-align:center;
+    margin-bottom:0;
+    letter-spacing:5px;
+    font-size:50px;
+    color:rgb(174 159 128);
+}
+
+header > p{
+    text-align:center;
+    margin:0;
+    letter-spacing:2px;
+    font-size:20px;
+    color:rgb(174 159 128);
+}
+
+
+
+.Main > .ProjectRow{ /* Row Groups */
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.Main > .ProjectRow > figure{
+    margin:0;
+}
+
+.Main > .ProjectRow > figure > img{
+    width:100%;
+    border-radius:17px;
+    margin-bottom:10px;
+}
+
+summary{
+    font-size:20px;
+    text-align:center;
+    margin:5px 0 5px 0;
+}
+
+
+
+.Main{
+    display:flex;
+    flex-direction:row;
+    width:75%;
+    margin:0 auto;
+    gap:6rem;
+}
+
+
+
+.ProjectRow{
+    width:25rem;
+}
+
+.ProjectRow > figure{ /* Individual Project Display Flexbox */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(218, 215, 205);
+    border:3px solid black;
+    border-radius:20px;
+}
+
+figcaption > h3 > a{
+    color:black;
+    text-decoration: none;
+}
+
+figcaption > h3{
+    margin:0;
+}
+
+.ProjectRow > figure > details > p{
+    margin-right:5px;
+    margin-left:5px;
+}
+
+
+
+footer{
+    background-color:rgb(52, 78, 65);
+    padding:20px;
+}
+
+footer > p{
+    text-align:center;
+    color:rgb(174 159 128);
+}

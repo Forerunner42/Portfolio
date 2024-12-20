@@ -1,0 +1,170 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    font-size:16px;
+}
+
+body{
+    background-color:rgb(88, 129, 87);
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, label, a{ /* Font Families */
+    font-family: "Merriweather", serif;
+    font-weight:300;
+    font-style: normal;
+}
+
+nav{ /* Nav Section */
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    background-color:rgb(52, 78, 65);
+    color:rgb(174 159 128);
+    padding:20px;
+}
+
+nav > ul{
+    display:flex;
+    list-style-type: none;
+}
+
+nav > ul > li{
+    margin:0 20px 0 20px;
+    font-size:20px;
+}
+
+nav > ul a{
+    text-decoration:none;
+    color:rgb(174 159 128);
+}
+
+nav > ul > li > a:hover{
+    color:orange;
+}
+
+
+
+header > h1{ /* Header Section */
+    text-align:center;
+    margin-bottom:0;
+    letter-spacing:5px;
+    font-size:50px;
+    color:rgb(174 159 128);
+}
+
+header > p{
+    text-align:center;
+    margin:0;
+    letter-spacing:2px;
+    font-size:20px;
+    color:rgb(174 159 128);
+}
+
+
+
+.Main > .ProjectRow{ /* Row Groups */
+    margin:0 auto;
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.Main > .ProjectRow > figure{
+    margin:0;
+}
+
+.Main > .ProjectRow > figure > img{
+    border-radius:17px;
+    margin-bottom:10px;
+    width:395px;
+    height:300px;
+}
+
+summary{
+    font-size:20px;
+    text-align:center;
+    margin:5px 0 5px 0;
+}
+
+
+
+.Main{ /* Main Flexbox */
+    display:flex;
+    flex-direction:row;
+    width:fit-content;
+    margin:0 auto;
+    gap:6rem;
+}
+
+
+
+.ProjectRow{
+    width:25rem;
+}
+
+.ProjectRow > figure > figcaption > h3 > a{
+    text-decoration: none;
+    color:black;
+}
+
+.ProjectRow > figure > figcaption > h3 > a:hover{
+    color:orange;
+}
+
+.ProjectRow > figure{ /* Individual Project Display Flexbox */
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(218, 215, 205);
+    border:3px solid black;
+    border-radius:20px;
+}
+
+figcaption > h3{
+    margin:0;
+}
+
+.ProjectRow > figure > details > p{
+    margin-right:5px;
+    margin-left:5px;
+}
+
+
+
+
+footer{ /* Footer Section */
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    background-color:rgb(52, 78, 65);
+    color:rgb(174 159 128);
+    padding:20px;
+}
+
+footer > ul{
+    display:flex;
+    list-style-type: none;
+}
+
+footer > ul > li > a{
+    margin-left:10px;
+    margin-right:10px;
+    text-decoration:none;
+    color:rgb(174 159 128);
+}
+
+footer > ul > li > a:hover{
+    color:orange;
+}
+
+footer > p, footer > ul{
+    margin:0;
+    padding:0;
+    justify-self:center;
+}
